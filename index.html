@@ -71,47 +71,52 @@ Sein Gefängnis ist mit vier Schlössern gesichert, für die man jeweils einen v
       
   
       <section id="slide2">
-        <div><head>
-  <meta charset="utf-8">
-  <title>Binary Calculator</title>
-  <link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-</head>
-<body>
-  <div class="container-fluid">
-<pre><code>&lt;div class=&quot;jumbotron&quot;&gt;
-  &lt;h1&gt;Binary Input/Output Calculator&lt;/h2&gt;
-  &lt;h3&gt;Perform basic arithmetic with binary numbers&lt;/h3&gt;
-  &lt;div id=&quot;res&quot; maxlength=&quot;8&quot;&gt;&lt;/div&gt;
+        <div><script>
+var screen = "";
 
-  &lt;div id=&quot;btns&quot; class=&quot;btn&quot;&gt;
-    &lt;div class=&quot;upper&quot;&gt;
-      &lt;button class=&quot;lgreen&quot; id=&quot;btn0&quot; onclick=&quot;key('0')&quot;&gt;0&lt;/button&gt;
-      &lt;button class=&quot;lgreen&quot; id=&quot;btn1&quot; onclick=&quot;key('1')&quot;&gt;1&lt;/button&gt;
-      &lt;button class=&quot;dgreen&quot; id=&quot;btnClr&quot; onclick=&quot;cl()&quot;&gt;C&lt;/button&gt;
-      &lt;button class=&quot;dgreen&quot; id=&quot;btnEql&quot; onclick=&quot;operatorFunx()&quot;&gt;=&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;lower&quot;&gt;
-      &lt;button id=&quot;btnSum&quot; class=&quot;operator&quot; onclick=&quot;key('+')&quot;&gt;
-              +&lt;/button&gt;
-      &lt;button id=&quot;btnSub&quot; class=&quot;operator&quot; onclick=&quot;key('-')&quot;&gt;
-              -&lt;/button&gt;
-      &lt;button id=&quot;btnMul&quot; class=&quot;operator&quot; onclick=&quot;key('*')&quot;&gt;
-              *&lt;/button&gt;
-      &lt;button id=&quot;btnDiv&quot; class=&quot;operator&quot; onclick=&quot;key('/')&quot;&gt;
-              /&lt;/button&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-  </div>
-</body>
-</html>
+function operatorFunx() {
+  if (screen.indexOf("+") != -1) {
+    var numbers = screen.split("+");
+    var x = parseInt(numbers[0], 2);
+    var y = parseInt(numbers[1], 2);
+    var sum = x + y;
+    var ans = sum.toString(2);
+  } else if (screen.indexOf("-") != -1) {
+    var numbers = screen.split("-");
+    var x = parseInt(numbers[0], 2);
+    var y = parseInt(numbers[1], 2);
+    var sub = x - y;
+    var ans = sub.toString(2);
+  } else if (screen.indexOf("*") != -1) {
+    var numbers = screen.split("*");
+    var x = parseInt(numbers[0], 2);
+    var y = parseInt(numbers[1], 2);
+    var mul = x * y;
+    var ans = mul.toString(2);
+  } else if (screen.indexOf("/") != -1) {
+    var numbers = screen.split("/");
+    var x = parseInt(numbers[0], 2);
+    var y = parseInt(numbers[1], 2);
+    var div = x / y;
+    var ans = div.toString(2);
+  }
+  screen = ans;
+  document.getElementById("res").innerHTML = screen;
+}
+
+function key(c) {
+  //console.log(screen);
+
+  screen += c;
+  document.getElementById("res").innerHTML = screen;
+}
+
+function cl() {
+  screen = "";
+  document.getElementById("res").innerHTML = screen;
+};
+
+</script>
  </div>
       </section>
   
