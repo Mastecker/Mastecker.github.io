@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Calculator_test</title>
+      <link>http://Mastecker.github.io/calculator_test/</link>
+      <pubDate>Mon, 21 Dec 2020 09:29:07 +0100</pubDate>
+      
+      <guid>http://Mastecker.github.io/calculator_test/</guid>
+      <description> Binary Calculator     &amp;lt;div class=&amp;quot;jumbotron&amp;quot;&amp;gt; &amp;lt;h1&amp;gt;Binary Input/Output Calculator&amp;lt;/h2&amp;gt; &amp;lt;h3&amp;gt;Perform basic arithmetic with binary numbers&amp;lt;/h3&amp;gt; &amp;lt;div id=&amp;quot;res&amp;quot; maxlength=&amp;quot;8&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div id=&amp;quot;btns&amp;quot; class=&amp;quot;btn&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;upper&amp;quot;&amp;gt; &amp;lt;button class=&amp;quot;lgreen&amp;quot; id=&amp;quot;btn0&amp;quot; onclick=&amp;quot;key(&#39;0&#39;)&amp;quot;&amp;gt;0&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;quot;lgreen&amp;quot; id=&amp;quot;btn1&amp;quot; onclick=&amp;quot;key(&#39;1&#39;)&amp;quot;&amp;gt;1&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;quot;dgreen&amp;quot; id=&amp;quot;btnClr&amp;quot; onclick=&amp;quot;cl()&amp;quot;&amp;gt;C&amp;lt;/button&amp;gt; &amp;lt;button class=&amp;quot;dgreen&amp;quot; id=&amp;quot;btnEql&amp;quot; onclick=&amp;quot;operatorFunx()&amp;quot;&amp;gt;=&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;lower&amp;quot;&amp;gt; &amp;lt;button id=&amp;quot;btnSum&amp;quot; class=&amp;quot;operator&amp;quot; onclick=&amp;quot;key(&#39;+&#39;)&amp;quot;&amp;gt; +&amp;lt;/button&amp;gt; &amp;lt;button id=&amp;quot;btnSub&amp;quot; class=&amp;quot;operator&amp;quot; onclick=&amp;quot;key(&#39;-&#39;)&amp;quot;&amp;gt; -&amp;lt;/button&amp;gt; &amp;lt;button id=&amp;quot;btnMul&amp;quot; class=&amp;quot;operator&amp;quot; onclick=&amp;quot;key(&#39;*&#39;)&amp;quot;&amp;gt; *&amp;lt;/button&amp;gt; &amp;lt;button id=&amp;quot;btnDiv&amp;quot; class=&amp;quot;operator&amp;quot; onclick=&amp;quot;key(&#39;/&#39;)&amp;quot;&amp;gt; /&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;     </description>
+    </item>
+    
+    <item>
       <title>Rätsel</title>
       <link>http://Mastecker.github.io/start/</link>
       <pubDate>Sun, 20 Dec 2020 13:37:11 +0100</pubDate>
