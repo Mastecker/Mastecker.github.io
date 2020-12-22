@@ -27,6 +27,9 @@
       
       <guid>http://Mastecker.github.io/calculator_test/</guid>
       <description>  function dual(){ alert(&#34;Hello Javatpoint&#34;); }    Binär - Addition
+     function insel(){ alert(&#34;Hello Javatpoint&#34;); }    Die Inseln
+     function farbe(){ alert(&#34;Hello Javatpoint&#34;); }    Die Farbe
+     function rbild(){ alert(&#34;Hello Javatpoint&#34;); }    Das R-Bild
      </description>
     </item>
     
