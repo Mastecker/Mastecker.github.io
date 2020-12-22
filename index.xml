@@ -12,22 +12,22 @@
     
     
     <item>
-      <title>Calculator_test</title>
-      <link>http://Mastecker.github.io/calculator_test/</link>
-      <pubDate>Mon, 21 Dec 2020 09:29:07 +0100</pubDate>
-      
-      <guid>http://Mastecker.github.io/calculator_test/</guid>
-      <description>  function msg(){ alert(&#34;Hello Javatpoint&#34;); }    Welcome to JavaScript
-    </description>
-    </item>
-    
-    <item>
       <title>Rätsel</title>
       <link>http://Mastecker.github.io/start/</link>
       <pubDate>Sun, 20 Dec 2020 13:37:11 +0100</pubDate>
       
       <guid>http://Mastecker.github.io/start/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Calculator_test</title>
+      <link>http://Mastecker.github.io/calculator_test/</link>
+      <pubDate>Mon, 21 Dec 2020 09:29:07 +0100</pubDate>
+      
+      <guid>http://Mastecker.github.io/calculator_test/</guid>
+      <description>  function dual(){ alert(&#34;Hello Javatpoint&#34;); }    Binär - Addition
+     </description>
     </item>
     
   </channel>
