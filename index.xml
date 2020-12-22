@@ -17,7 +17,8 @@
       <pubDate>Mon, 21 Dec 2020 09:29:07 +0100</pubDate>
       
       <guid>http://Mastecker.github.io/calculator_test/</guid>
-      <description>var screen = &#34;&#34;; function operatorFunx() { if (screen.indexOf(&#34;+&#34;) != -1) { var numbers = screen.split(&#34;+&#34;); var x = parseInt(numbers[0], 2); var y = parseInt(numbers[1], 2); var sum = x + y; var ans = sum.toString(2); } else if (screen.indexOf(&#34;-&#34;) != -1) { var numbers = screen.split(&#34;-&#34;); var x = parseInt(numbers[0], 2); var y = parseInt(numbers[1], 2); var sub = x - y; var ans = sub.toString(2); } else if (screen.</description>
+      <description>  function msg(){ alert(&#34;Hello Javatpoint&#34;); }    Welcome to JavaScript
+    </description>
     </item>
     
     <item>
