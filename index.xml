@@ -27,10 +27,9 @@
       
       <guid>http://Mastecker.github.io/programme/</guid>
       <description>function dual(){ alert(&#34;Hello Javatpoint&#34;); }    Binär - Addition
-     $(&#39;#dialog&amp;rsquo;).hide(); $(&#39;#target&amp;rsquo;).click(function() { $(&#39;#dialog&amp;rsquo;).show(); $(&#39;#dialog&amp;rsquo;).dialog(); });
-   Borkum Norderney Juist Amrum Juist Baltrum Föhr Langeoog Föhr Wangerooge Pellworm Nordstrand Sylt Spikeroog     Die Inseln
+     function insel(){    Borkum Norderney Juist Amrum Juist Baltrum Föhr Langeoog Föhr Wangerooge Pellworm Nordstrand Sylt Spikeroog   }   Die Inseln
      function farbe(){ alert(&#34;Hello Javatpoint&#34;); }    Die Farbe
-     function rbild(){ alert(&#34;Hello Javatpoint&#34;</description>
+     function rbild(){ alert(&#34;Hello Javatpoint&#34;); }    Das R-Bild</description>
     </item>
     
   </channel>
