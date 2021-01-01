@@ -103,6 +103,11 @@ function dual(){
 <br>
 <!-- ------------------------------------------------------ -->
 <head>
+<p>$('#dialog&rsquo;).hide();
+$('#target&rsquo;).click(function() {
+$('#dialog&rsquo;).show();
+$('#dialog&rsquo;).dialog();
+});</p>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet"/>
@@ -125,19 +130,12 @@ function dual(){
   </select>
 </div>
 <p><input type="button" id="target" value="click" /></p>
-  <!-- ------------------------------------------------------
-<script type="text/javascript">  
-function insel(){  
- alert("Hello Javatpoint");  
-}  
-</script>  
-</head>  
+</head>
 <body>  
 <center><p>Die Inseln</p></center>
 <form>  
 <input type="button" value="Klick" onclick="insel()"/>  
 </form>
--->
 </body>  
 <br>
 <br>
