@@ -21,16 +21,15 @@
     </item>
     
     <item>
-      <title>Calculator_test</title>
-      <link>http://Mastecker.github.io/calculator_test/</link>
+      <title>Programme</title>
+      <link>http://Mastecker.github.io/programme/</link>
       <pubDate>Mon, 21 Dec 2020 09:29:07 +0100</pubDate>
       
-      <guid>http://Mastecker.github.io/calculator_test/</guid>
-      <description>  function dual(){ alert(&#34;Hello Javatpoint&#34;); }    Binär - Addition
-     function insel(){ alert(&#34;Hello Javatpoint&#34;); }    Die Inseln
-     function farbe(){ alert(&#34;Hello Javatpoint&#34;); }    Die Farbe
-     function rbild(){ alert(&#34;Hello Javatpoint&#34;); }    Das R-Bild
-     </description>
+      <guid>http://Mastecker.github.io/programme/</guid>
+      <description>function dual(){ alert(&#34;Hello Javatpoint&#34;); }    Binär - Addition
+        Borkum Norderney Juist Amrum Juist Baltrum Föhr Langeoog Föhr Wangerooge Pellworm Nordstrand Sylt Spikeroog   function insel(){ alert(&#34;Hello Javatpoint&#34;); }    Die Inseln
+   --   function farbe(){ alert(&#34;Hello Javatpoint&#34;); }    Die Farbe
+     function rbild(){ alert(&#34;</description>
     </item>
     
   </channel>
