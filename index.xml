@@ -27,9 +27,10 @@
       
       <guid>http://Mastecker.github.io/programme/</guid>
       <description>function dual(){ alert(&#34;Hello Javatpoint&#34;); }    Binär - Addition
-     function insel(){    Borkum Norderney Juist Amrum Juist Baltrum Föhr Langeoog Föhr Wangerooge Pellworm Nordstrand Sylt Spikeroog   }    Die Inseln
-     function farbe(){ alert(&#34;Hello Javatpoint&#34;); }    Die Farbe
-     function rbild(){ alert(&#34;Hello Javatpoint&#34;); }    Das R-Bild</description>
+     Die Inseln
+ Klick auf den Button und tippe den Namen einer Insel ein. Achte auf Groß- und Kleinschreibung!
+Try it
+ function myFunction() { var text; var insel = prompt(&#34;Welche Insel ist es?&#34;, &#34;Borkum&#34;); switch(insel) { case &#34;Sylt&#34;: text = &#34;Richtig!! Code 2 = 7501&#34;; break; default: text = &#34;Das ist leider nicht richtig.</description>
     </item>
     
   </channel>

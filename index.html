@@ -58,8 +58,6 @@
 <p><img style="float: right;" alt="" src="/RetteRobby.png" /></p>
 <p>Roboter Robby wurde gefangen genommen.
 Sein Gefängnis ist mit vier Schlössern gesichert, für die man jeweils einen vierstelligen Codebenötigt. Bitte befreit Robby!! Wie lauten die vier Codes?</p>
-<p>Roboter Robby wurde gefangen genommen.
-Sein Gefängnis ist mit vier Schlössern gesichert, für die man jeweils einen vierstelligen Codebenötigt. Bitte befreit Robby!! Wie lauten die vier Codes?</p>
  </div>
       </section>
   
@@ -102,42 +100,26 @@ function dual(){
 <br>
 <br>
 <!-- ------------------------------------------------------ -->
-<head>
-<script type="text/javascript">  
-function insel(){
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet"/>
-  <div id="dialog" title="Basic dialog">
-    <select>
-      <option value="borkum">Borkum</option>
-      <option value="norderney">Norderney</option>
-      <option value="juist">Juist</option>
-      <option value="amrum">Amrum</option>
-      <option value="juist">Juist</option>
-      <option value="baltrum">Baltrum</option>
-      <option value="foehr">Föhr</option>
-      <option value="langeoog">Langeoog</option>
-      <option value="foehr">Föhr</option>
-      <option value="wangerooge">Wangerooge</option>
-      <option value="pellworm">Pellworm</option>
-      <option value="nordstrand">Nordstrand</option>
-      <option value="sylt">Sylt</option>
-      <option value="spikeroog">Spikeroog</option>
-    </select>
-  </div>
-}
-<input type="button" id="target" value="click" />
-</script>  
-</head>
-<body>  
+<body>
 <center><p>Die Inseln</p></center>
-<form>  
-<input type="button" value="Klick" onclick="insel()"/>  
-</form>
-</body>  
-<br>
-<br>
+<p>Klick auf den Button und tippe den Namen einer Insel ein. Achte auf Groß- und Kleinschreibung!</p>
+<p><button onclick="myFunction()">Try it</button></p>
+<p id="inselLoesung"></p>
+<script>
+function myFunction() {
+  var text;
+  var insel = prompt("Welche Insel ist es?", "Borkum");
+  switch(insel) {
+    case "Sylt":
+      text = "Richtig!! Code 2 = 7501";
+      break;
+    default:
+      text = "Das ist leider nicht richtig.";
+  }
+  document.getElementById("inselLoesung").innerHTML = text;
+}
+</script>
+</body>
 <!-- ------------------------------------------------------ -->
 <head>  
 <script type="text/javascript">  
