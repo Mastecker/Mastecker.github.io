@@ -26,11 +26,11 @@
       <pubDate>Mon, 21 Dec 2020 09:29:07 +0100</pubDate>
       
       <guid>http://Mastecker.github.io/programme/</guid>
-      <description>function dual(){ alert(&#34;Hello Javatpoint&#34;); }    Binär - Addition
-     Die Inseln
- Klick auf den Button und tippe den Namen einer Insel ein. Achte auf Groß- und Kleinschreibung!
-Try it
- function myFunction() { var text; var insel = prompt(&#34;Welche Insel ist es?&#34;, &#34;Borkum&#34;); switch(insel) { case &#34;Sylt&#34;: text = &#34;Richtig!! Code 2 = 7501&#34;; break; default: text = &#34;Das ist leider nicht richtig.</description>
+      <description>Binär - Addition
+   Die Inseln
+Klick auf den Button und tippe den Namen einer Insel ein. Achte auf Groß- und Kleinschreibung!
+Klick
+  function island() { var text; var insel = prompt(&#34;Welche Insel ist es?&#34;, &#34;Borkum&#34;); switch(insel) { case &#34;Sylt&#34;: text = &#34;Richtig!! Code 2 = 7501&#34;; break; default: text = &#34;Das ist leider nicht richtig.&#34;; } document.getElementById(&#34;inselLoesung&#34;).innerHTML = text; }    Die Farbe</description>
     </item>
     
   </channel>
