@@ -26,9 +26,7 @@
       <pubDate>Mon, 21 Dec 2020 09:29:07 +0100</pubDate>
       
       <guid>http://Mastecker.github.io/programme/</guid>
-      <description>Binär - Addition   function island() { var text; var insel = prompt(&#34;Welche Insel ist es?&#34;, &#34;Borkum&#34;); switch(insel) { case &#34;Sylt&#34;: text = &#34;Richtig!! Code 2 = 7501&#34;; break; default: text = &#34;Das ist leider nicht richtig.&#34;; } document.getElementById(&#34;inselLoesung&#34;).innerHTML = text; }  Die Inseln Klick auf den Button und tippe den Namen einer Insel ein. Achte auf Groß- und Kleinschreibung!
-Klick
-  var colorhex = &#34;</description>
+      <description>--  Um Binärwerte zum angezeigten Wert hinzuzufügen, klicke auf die Zahl, die du hinzuaddieren möchtest. 0000  &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;calculator__keys&amp;quot;&amp;gt; &amp;lt;button data-action=&amp;quot;clear&amp;quot;&amp;gt;Auf Null setzen&amp;lt;/button&amp;gt; &amp;lt;br&amp;gt;&amp;lt;br&amp;gt; &amp;lt;button&amp;gt;0000&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;0001&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;0010&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;0011&amp;lt;/button&amp;gt; &amp;lt;br&amp;gt; &amp;lt;button&amp;gt;0100&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;0101&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;0110&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;0111&amp;lt;/button&amp;gt; &amp;lt;br&amp;gt; &amp;lt;button&amp;gt;1000&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;1001&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;1010&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;1011&amp;lt;/button&amp;gt; &amp;lt;br&amp;gt; &amp;lt;button&amp;gt;1100&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;1101&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;1110&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;1111&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;    function addBinary(a, b) { return (parseInt(a, 2) + parseInt(b, 2)).toString(2) } const calculator = document.querySelector(&#39;.calculator&#39;) const display = calculator.</description>
     </item>
     
   </channel>

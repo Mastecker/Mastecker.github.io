@@ -87,7 +87,7 @@ Sein Gefängnis ist mit vier Schlössern gesichert, für die man jeweils einen v
 <body>  
 <center>
 <!-- --------------------Trennstrich--------------------- -->
- </div>
+<!--  </div>
       </section>
       
       
@@ -96,16 +96,107 @@ Sein Gefängnis ist mit vier Schlössern gesichert, für die man jeweils einen v
       
   
       <section id="slide4">
-        <div>
+        <div> -->
 <!-- --------------------BinärAddition------------------------- -->
+<div class="container">
+    <p>
+      Um Binärwerte zum angezeigten Wert hinzuzufügen, klicke auf die Zahl, die du hinzuaddieren möchtest.
+    </p>
+    <div class="calculator">
+      <div class="calculator__display">0000
+<pre><code>  &lt;/div&gt;
+
+  &lt;div class=&quot;calculator__keys&quot;&gt;
+    &lt;button data-action=&quot;clear&quot;&gt;Auf Null setzen&lt;/button&gt;
+    &lt;br&gt;&lt;br&gt;
+    &lt;button&gt;0000&lt;/button&gt;
+    &lt;button&gt;0001&lt;/button&gt;
+    &lt;button&gt;0010&lt;/button&gt;
+    &lt;button&gt;0011&lt;/button&gt;
+    &lt;br&gt;
+    &lt;button&gt;0100&lt;/button&gt;
+    &lt;button&gt;0101&lt;/button&gt;
+    &lt;button&gt;0110&lt;/button&gt;
+    &lt;button&gt;0111&lt;/button&gt;
+    &lt;br&gt;
+    &lt;button&gt;1000&lt;/button&gt;
+    &lt;button&gt;1001&lt;/button&gt;
+    &lt;button&gt;1010&lt;/button&gt;
+    &lt;button&gt;1011&lt;/button&gt;
+    &lt;br&gt;
+    &lt;button&gt;1100&lt;/button&gt;
+    &lt;button&gt;1101&lt;/button&gt;
+    &lt;button&gt;1110&lt;/button&gt;
+    &lt;button&gt;1111&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+  </div>
 <script>
+
+function addBinary(a, b) {
+  return (parseInt(a, 2) + parseInt(b, 2)).toString(2)
+}
+
+const calculator = document.querySelector('.calculator')
+const display = calculator.querySelector('.calculator__display')
+const keys = calculator.querySelector('.calculator__keys')
+
+keys.addEventListener('click', e => {
+  if (e.target.matches('button')) {
+    const key = e.target
+    const action = key.dataset.action
+    const keyContent = key.textContent
+    var displayedNum = display.textContent
+    const previousKeyType = calculator.dataset.previousKeyType
+
+    Array.from(key.parentNode.children)
+      .forEach(k => k.classList.remove('is-depressed'))
+
+    if (!action) {
+      if (displayedNum === '0' || previousKeyType === 'operator') {
+        display.textContent = keyContent
+      } else {
+        display.textContent = displayedNum + keyContent
+      }
+    }
+
+    if (action === 'clear') {
+	  console.log('clear key!')
+	  display.textContent = '0000'	  
+    }
+
+    if (!action) {
+      	const keyContent = key.textContent
+		var neuerWert = addBinary(displayedNum, keyContent)
+		console.log("berechneterWert: "+neuerWert)
+		
+		if(neuerWert == 1){
+			display.textContent = '0001'
+		}
+		else if(neuerWert > 1111){
+			display.textContent = '0000'
+		}
+		else if(neuerWert > 111){
+			display.textContent = neuerWert
+		}
+		else if(neuerWert > 11){
+			display.textContent = '0' + neuerWert
+		}
+		else if(neuerWert > 1){
+			display.textContent = '00' + neuerWert
+		}
+
+    }
+  }
+})
 
 </script>
 <h2>Binär - Addition</h2>
 <br>
 <br>
 <!-- --------------------Trennstrich--------------------- -->
- </div>
+<!--  </div>
       </section>
       
       
@@ -114,7 +205,7 @@ Sein Gefängnis ist mit vier Schlössern gesichert, für die man jeweils einen v
       
   
       <section id="slide5">
-        <div>
+        <div> -->
 <!-- --------------------Inseln------------------------- -->
 <script>
 function island() {
@@ -134,8 +225,22 @@ function island() {
 <p>Klick auf den Button und tippe den Namen einer Insel ein. Achte auf Groß- und Kleinschreibung!</p>
 <p><button onclick="island()">Klick</button></p>
 <p id="inselLoesung"></p>
+<p>Mögliche Antwort ist eine der deutschen Nordseeinseln: <br>
+	Borkum, 
+    Föhr, 
+    Pellworm, 
+    Norderney, 
+    Amrum, 
+    Langeoog, 
+    Spiekeroog, 
+    Juist, 
+    Sylt, 
+    Wangerooge, 
+	Baltrum, 
+	Nordstrand
+</p>
 <!-- --------------------Trennstrich--------------------- -->
- </div>
+<!--  </div>
       </section>
       
       
@@ -144,12 +249,11 @@ function island() {
       
   
       <section id="slide6">
-        <div>
+        <div> -->
 <!-- --------------------Farben------------------------- -->
 <script>
     var colorhex = "#ff0000";
     var color = "#ff0000";
-    var colorObj = w3color(color);
     var hh = 0;
     function clickColor(hex, seltop, selleft, html5) {
         var c, cObj, colormap, areas, i, areacolor, cc;
@@ -196,20 +300,15 @@ function island() {
         var b = document.getElementById('valBlue').innerHTML;
         document.getElementById('change').style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
         document.getElementById('changetxt').innerHTML = "rgb(" + r + ", " + g + ", " + b + ")";
-        document.getElementById('changetxthex').innerHTML = w3color("rgb(" + r + "," + g + "," + b + ")").toHexString();
     }
 
     function hslLum_top() {
       var i, a, match;
       var color = document.getElementById("colorhexDIV").innerHTML;
-      var hslObj = w3color(color);
       var h = hslObj.hue;
       var s = hslObj.sat;
       var l = hslObj.lightness;
       var arr = [];
-      for (i = 0; i <= 20; i++) {
-          arr.push(w3color("hsl(" + h + "," + s + "," + (i * 0.05) + ")"));
-      }
       arr.reverse();
       a = "<h3 class='w3-center'>Lighter / Darker:</h3><table class='colorTable' style='width:100%;'>";
       match = 0;
@@ -218,8 +317,6 @@ function island() {
           a += "<tr><td></td><td></td><td></td></tr>";
           a += "<tr>";
           a += "<td style='text-align:right;'><b>" + Math.round(l * 100) + "%&nbsp;</b></td>";
-          a += "<td style='background-color:" + w3color(hslObj).toHexString() + "'><br><br></td>";
-          a += "<td>&nbsp;<b>" + w3color(hslObj).toHexString() + "</b></td>";
           a += "</tr>";
           a += "<tr><td></td><td></td><td></td></tr>";
           match = 1;      
@@ -228,8 +325,6 @@ function island() {
             a += "<tr><td></td><td></td><td></td></tr>";
             a += "<tr>";
             a += "<td style='text-align:right;'><b>" + Math.round(l * 100) + "%&nbsp;</b></td>";
-            a += "<td style='background-color:" + w3color(hslObj).toHexString() + "'></td>";
-            a += "<td>&nbsp;<b>" + w3color(hslObj).toHexString() + "</b></td>";
             a += "</tr>";
             a += "<tr><td></td><td></td><td></td></tr>";
             match = 1;
@@ -283,7 +378,7 @@ function island() {
 <br>
 <br>
 <!-- --------------------Trennstrich--------------------- -->
- </div>
+<!--  </div>
       </section>
       
       
@@ -292,7 +387,7 @@ function island() {
       
   
       <section id="slide7">
-        <div>
+        <div> -->
 <!-- --------------------Das R-Bild------------------------- -->
 <script>
 
