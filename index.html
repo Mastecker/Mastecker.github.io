@@ -294,35 +294,34 @@ function island() {
 </p>
 <button onclick="farbenloesung()">Klick</button>
 <p id="farbenloesung"></p>
-<pre><code>&lt;table class=&quot;w3-table w3-border&quot; style=&quot;width:100%&quot;&gt;
-    &lt;tr&gt;
-        &lt;td id=&quot;valRed&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;valGreen&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;valBlue&quot;&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td id=&quot;red&quot; style=&quot;height:50px;background-color:red&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;green&quot; style=&quot;background-color:green&quot;&gt;&lt;/td&gt;
-        &lt;td id=&quot;blue&quot; style=&quot;background-color:blue&quot;&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;
-            &lt;input oninput=&quot;changeRed(this.value)&quot; onchange=&quot;changeRed(this.value)&quot; type=&quot;range&quot; id=&quot;slideRed&quot; name=&quot;slideRed&quot; min=&quot;0&quot; max=&quot;255&quot;&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-            &lt;input oninput=&quot;changeGreen(this.value)&quot; onchange=&quot;changeGreen(this.value)&quot; type=&quot;range&quot; id=&quot;slideGreen&quot; name=&quot;slideGreen&quot; min=&quot;0&quot; max=&quot;255&quot;&gt;
-        &lt;/td&gt;
-        &lt;td&gt;
-            &lt;input oninput=&quot;changeBlue(this.value)&quot; onchange=&quot;changeBlue(this.value)&quot; type=&quot;range&quot; id=&quot;slideBlue&quot; name=&quot;slideBlue&quot; min=&quot;0&quot; max=&quot;255&quot;&gt;
-        &lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;    
-&lt;div id=&quot;change&quot; style=&quot;height:50px&quot;&gt;&lt;/div&gt;
-&lt;div id=&quot;fixed&quot; style=&quot;height:50px&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;w3-center&quot; style=&quot;font-family:Consolas, 'Courier New', Courier, monospace&quot;&gt;
-&lt;span id=&quot;changetxt&quot;&gt;&lt;/span&gt;&lt;br&gt;
-&lt;span id=&quot;changetxthex&quot;&gt;&lt;/span&gt;
-</code></pre>
+<table class="w3-table w3-border" style="width:100%">
+		<tr>
+			<td id="valRed"></td>
+			<td id="valGreen"></td>
+			<td id="valBlue"></td>
+		</tr>
+		<tr>
+    		<td id="red" style="height:50px;background-color:red"></td>
+    		<td id="green" style="background-color:green"></td>
+   			<td id="blue" style="background-color:blue"></td>
+		</tr>
+		<tr>
+			<td>
+  				<input oninput="changeRed(this.value)" onchange="changeRed(this.value)" type="range" id="slideRed" name="slideRed" min="0" max="255">
+  			</td>
+   			<td>
+  				<input oninput="changeGreen(this.value)" onchange="changeGreen(this.value)" type="range" id="slideGreen" name="slideGreen" min="0" max="255">
+  			</td>
+  			<td>
+  				<input oninput="changeBlue(this.value)" onchange="changeBlue(this.value)" type="range" id="slideBlue" name="slideBlue" min="0" max="255">
+  			</td>
+   		</tr>
+	</table>    
+	<div id="change" style="height:50px"></div>
+ 	<div id="fixed" style="height:50px"></div>
+  	<div class="w3-center" style="font-family:Consolas, 'Courier New', Courier, monospace">
+ 	<span id="changetxt"></span><br>
+ 	<span id="changetxthex"></span>
 </div>
 <!-- --------------------Trennstrich--------------------- -->
 <!--  </div>
