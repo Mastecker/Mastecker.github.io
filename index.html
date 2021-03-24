@@ -383,14 +383,21 @@ function changePic(pictureSelect){
 	var codeVier = 0000;
 	
 	function kaefigOeffnen(){
-		var kaefigbedingung = 0;
-		
-		if(kaefigbedingung == 1){
+		var FL = document.getElementById("firstLockFirst").value + document.getElementById("firstLockSecond").value + document.getElementById("firstLockThird").value + document.getElementById("firstLockFourth").value;
+		var SL = document.getElementById("secondLockFirst").value + document.getElementById("secondLockSecond").value + document.getElementById("secondLockThird").value + document.getElementById("secondLockFourth").value;
+		var TL = document.getElementById("thirdLockFirst").value + document.getElementById("thirdLockSecond").value + document.getElementById("thirdLockThird").value + document.getElementById("thirdLockFourth").value;
+		var FRL = document.getElementById("fourthLockFirst").value + document.getElementById("fourthLockSecond").value + document.getElementById("fourthLockThird").value + document.getElementById("fourthLockFourth").value;
+
+		console.log(FL);
+		console.log(SL);
+		console.log(TL);
+		console.log(FRL);
+
+		if (FL == 3232 && SL == 7501 && TL == 2983 && FRL == 3268){
 			freeRobby();
 		}else{
 			document.getElementById("falscheLsg").style.display='block';
 		}
-		
 	}
 
 	function freeRobby(){
@@ -405,38 +412,17 @@ function changePic(pictureSelect){
 <table style="width:50%">
 <tr>
  <div class="form">
-	<label for="firstLock">
 	<td>
-		<input id="first" type="number" min="0" max="9" step="1" value="3">
+		<input id="firstLockFirst" type="number" min="0" max="9" step="1" value="3">
 	</td>
 	<td>
-		<input id="second" type="number" min="0" max="9" step="1" value="8">
+		<input id="firstLockSecond" type="number" min="0" max="9" step="1" value="8">
 	</td>
 	<td>
-		<input id="third" type="number" min="0" max="9" step="1" value="9">
+		<input id="firstLockThird" type="number" min="0" max="9" step="1" value="9">
 	</td>
 	<td>
-		<input id="fourth" type="number" min="0" max="9" step="1" value="0">
-	</td>
-	</label>
-</form>
-</div>
-</tr>
-<table style="width:50%">
-<tr>
- <div class="form">
-	<label for="secondLock">
-	<td>
-		<input id="first" type="number" min="0" max="9" step="1" value="5">
-	</td>
-	<td>
-		<input id="second" type="number" min="0" max="9" step="1" value="2">
-	</td>
-	<td>
-		<input id="third" type="number" min="0" max="9" step="1" value="0">
-	</td>
-	<td>
-		<input id="fourth" type="number" min="0" max="9" step="1" value="3">
+		<input id="firstLockFourth" type="number" min="0" max="9" step="1" value="0">
 	</td>
 	</label>
 </form>
@@ -445,18 +431,17 @@ function changePic(pictureSelect){
 <table style="width:50%">
 <tr>
  <div class="form">
-	<label for="thirdLock">
 	<td>
-		<input id="first" type="number" min="0" max="9" step="1" value="7">
+		<input id="secondLockFirst" type="number" min="0" max="9" step="1" value="5">
 	</td>
 	<td>
-		<input id="second" type="number" min="0" max="9" step="1" value="1">
+		<input id="secondLockSecond" type="number" min="0" max="9" step="1" value="2">
 	</td>
 	<td>
-		<input id="third" type="number" min="0" max="9" step="1" value="4">
+		<input id="secondLockThird" type="number" min="0" max="9" step="1" value="0">
 	</td>
 	<td>
-		<input id="fourth" type="number" min="0" max="9" step="1" value="8">
+		<input id="secondLockFourth" type="number" min="0" max="9" step="1" value="3">
 	</td>
 	</label>
 </form>
@@ -465,25 +450,43 @@ function changePic(pictureSelect){
 <table style="width:50%">
 <tr>
  <div class="form">
-	<label for="fourthLock">
 	<td>
-		<input id="first" type="number" min="0" max="9" step="1" value="2">
+		<input id="thirdLockFirst" type="number" min="0" max="9" step="1" value="7">
 	</td>
 	<td>
-		<input id="second" type="number" min="0" max="9" step="1" value="7">
+		<input id="thirdLockSecond" type="number" min="0" max="9" step="1" value="1">
 	</td>
 	<td>
-		<input id="third" type="number" min="0" max="9" step="1" value="3">
+		<input id="thirdLockThird" type="number" min="0" max="9" step="1" value="4">
 	</td>
 	<td>
-		<input id="fourth" type="number" min="0" max="9" step="1" value="5">
+		<input id="thirdLockFourth" type="number" min="0" max="9" step="1" value="8">
+	</td>
+	</label>
+</form>
+</div>
+</tr>
+<table style="width:50%">
+<tr>
+ <div class="form">
+	<td>
+		<input id="fourthLockFirst" type="number" min="0" max="9" step="1" value="2">
+	</td>
+	<td>
+		<input id="fourthLockSecond" type="number" min="0" max="9" step="1" value="7">
+	</td>
+	<td>
+		<input id="fourthLockThird" type="number" min="0" max="9" step="1" value="3">
+	</td>
+	<td>
+		<input id="fourthLockFourth" type="number" min="0" max="9" step="1" value="5">
 	</td>
 	</label>
 </form>
 </div>
 </tr>
 </table>
-<p>Wenn du alle Schlösser richtig gedreht hast:</p><br>
+<p>Wenn du alle Schlösser richtig gedreht hast:</p>
 <button onclick="kaefigOeffnen()">Befreie Robby</button>
 <br>
 <br>
