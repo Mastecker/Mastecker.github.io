@@ -385,7 +385,12 @@ function changePic(pictureSelect){
 	function kaefigOeffnen(){
 
 
+		freeRobby();
 	}
+
+	function freeRobby(){
+	document.getElementById("robbyBild").src ='/BefreiterRobby.png';
+}
 
 
 </script>
@@ -472,6 +477,11 @@ function changePic(pictureSelect){
 </div>
 </tr>
 </table>
+<p>Wenn du alle Schlösser richtig gedreht hast:</p><br>
+<button onclick="kaefigOeffnen()">Befreie Robby</button>
+<div>
+	<img id="robbyBild" src="/transparent.png">
+</div>
 </div> 
 </center>
 </body>  
