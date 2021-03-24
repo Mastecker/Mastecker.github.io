@@ -388,13 +388,9 @@ function changePic(pictureSelect){
 		var TL = document.getElementById("thirdLockFirst").value + document.getElementById("thirdLockSecond").value + document.getElementById("thirdLockThird").value + document.getElementById("thirdLockFourth").value;
 		var FRL = document.getElementById("fourthLockFirst").value + document.getElementById("fourthLockSecond").value + document.getElementById("fourthLockThird").value + document.getElementById("fourthLockFourth").value;
 
-		console.log(FL);
-		console.log(SL);
-		console.log(TL);
-		console.log(FRL);
-
 		if (FL == 3232 && SL == 7501 && TL == 2983 && FRL == 3268){
 			freeRobby();
+			document.getElementById("falscheLsg").style.display='none'
 		}else{
 			document.getElementById("falscheLsg").style.display='block';
 		}
