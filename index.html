@@ -383,13 +383,19 @@ function changePic(pictureSelect){
 	var codeVier = 0000;
 	
 	function kaefigOeffnen(){
-
-
-		freeRobby();
+		var kaefigbedingung = 0;
+		
+		if(kaefigbedingung == 1){
+			freeRobby();
+		}else{
+			document.getElementById("falscheLsg").style.display='block';
+		}
+		
 	}
 
 	function freeRobby(){
 	document.getElementById("robbyBild").src ='/BefreiterRobby.png';
+	document.getElementById("glueckwunsch").style.display='block';
 }
 
 
@@ -479,9 +485,14 @@ function changePic(pictureSelect){
 </table>
 <p>Wenn du alle Schlösser richtig gedreht hast:</p><br>
 <button onclick="kaefigOeffnen()">Befreie Robby</button>
+<br>
+<br>
+<div id="falscheLsg" style="display:none;">Das ist leider noch nicht richtig. :(</div>
 <div>
 	<img id="robbyBild" src="/transparent.png">
+	<br>
 </div>
+<div id="glueckwunsch" style="display:none;">Juchuuu, Robby ist frei!!</div>
 </div> 
 </center>
 </body>  
