@@ -319,23 +319,35 @@ function changePic(pictureSelect){
 
 </script>
 <h2>R-Bild</h2>
+<table style="width:100%">
+<tr>
+<th>
  <div class="form">
 	<input type="radio" name="red" id="redon" value="1" checked="checked">Die rote LED funktioniert <br>
 	<input type="radio" name="red" id="redoff" value="0">Die rote LED funktioniert nicht<br><br>
 	 <button type="button" onclick="getValue()">Klick</button>
 </form>
 </div>
-<form>
+</th>
+<th>
+ <div class="form">
 	<input type="radio" name="green" id="gruenon" value="1" checked="checked">Die grüne LED funktioniert <br>
 	<input type="radio" name="green" id="gruenoff" value="0">Die grüne LED funktioniert nicht<br><br>
 	 <button type="button" onclick="getValue()">Klick</button>
 </form>
-<form>
+</div>
+</th>
+<th>
+ <div class="form">
 	<input type="radio" name="blue" id="blueon" value="1" checked="checked">Die blaue LED funktioniert <br>
 	<input type="radio" name="blue" id="blueoff" value="0">Die blaue LED funktioniert nicht<br><br>
 	 <button type="button" onclick="getValue()">Klick</button>
 	 <br><br>
 </form>
+</div>
+</th>
+</tr>
+</table>
   <div>
     <img id="picture" src="/111.png">
   </div>
