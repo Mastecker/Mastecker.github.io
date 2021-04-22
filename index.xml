@@ -27,7 +27,17 @@
       
       <guid>http://Mastecker.github.io/programme/</guid>
       <description>Binär - Addition  Um Binärwerte zum angezeigten Wert hinzuzufügen, klicke auf die Zahl, die du hinzuaddieren möchtest. 0000
-Auf Null setzen 0000 0001 0010 0011 0100 0101 0110 0111 1000 1001 1010 1011 1100 1101 1110 1111     function addBinary(a, b) { return (parseInt(a, 2) + parseInt(b, 2)).toString(2) } const calculator = document.querySelector(&#39;.calculator&#39;) const display = calculator.querySelector(&#39;.calculator__display&#39;) const keys = calculator.querySelector(&#39;.calculator__keys&#39;) keys.addEventListener(&#39;click&#39;, e = { if (e.</description>
+Auf Null setzen 0000 0001 0010 0011 0100 0101 0110 0111 1000 1001 1010 1011 1100 1101 1110 1111     function addDecimal(x,y){ z = (parseInt(x, 2) + parseInt(y, 2)).toString(2) console.log(&#34;Rechnung Binär: &#34; +z) if(z == 1){ return &#39;0001&#39; } else if(z  1111){ var a = parseInt(x, 2) console.</description>
+    </item>
+    
+    <item>
+      <title>Programme</title>
+      <link>http://Mastecker.github.io/testsite/</link>
+      <pubDate>Mon, 21 Dec 2020 09:29:07 +0100</pubDate>
+      
+      <guid>http://Mastecker.github.io/testsite/</guid>
+      <description>Binär - AdditionUm Binärwerte zum angezeigten Wert hinzuzufügen, klicke auf die Zahl, die du hinzuaddieren möchtest.0000
+Auf Null setzen0000000100100011010001010110011110001001101010111100110111101111function addDecimal(x,y){z = (parseInt(x, 2) + parseInt(y, 2)).toString(2)console.log(&#34;Rechnung Binär: &#34; +z)if(z == 1){return &#39;0001&#39;}else if(z  1111){var a = parseInt(x, 2)console.</description>
     </item>
     
     <item>
@@ -36,7 +46,7 @@ Auf Null setzen 0000 0001 0010 0011 0100 0101 0110 0111 1000 1001 1010 1011 1100
       <pubDate>Tue, 23 Mar 2021 09:29:07 +0100</pubDate>
       
       <guid>http://Mastecker.github.io/befreiung/</guid>
-      <description>var codeEins = 0000;var codeZwei = 0000;var codeDrei = 0000;var codeVier = 0000;function kaefigOeffnen(){var FL = document.getElementById(&#34;firstLockFirst&#34;).value + document.getElementById(&#34;firstLockSecond&#34;).value + document.getElementById(&#34;firstLockThird&#34;).value + document.getElementById(&#34;firstLockFourth&#34;).value;var SL = document.getElementById(&#34;secondLockFirst&#34;).value + document.getElementById(&#34;secondLockSecond&#34;).value + document.getElementById(&#34;secondLockThird&#34;).value + document.getElementById(&#34;secondLockFourth&#34;).value;var TL = document.getElementById(&#34;thirdLockFirst&#34;).value + document.getElementById(&#34;thirdLockSecond&#34;).value + document.getElementById(&#34;thirdLockThird&#34;).value + document.getElementById(&#34;thirdLockFourth&#34;).value;var FRL = document.getElementById(&#34;fourthLockFirst&#34;).value + document.getElementById(&#34;fourthLockSecond&#34;).value + document.getElementById(&#34;fourthLockThird&#34;).value + document.getElementById(&#34;fourthLockFourth&#34;).value;if (FL == 3232 &amp;&amp; SL == 7501 &amp;&amp; TL == 2983 &amp;&amp; FRL == 3268){freeRobby();document.</description>
+      <description>var codeEins = 0000;var codeZwei = 0000;var codeDrei = 0000;var codeVier = 0000;function kaefigOeffnen(){var FL = document.getElementById(&#34;firstLockFirst&#34;).value + document.getElementById(&#34;firstLockSecond&#34;).value + document.getElementById(&#34;firstLockThird&#34;).value + document.getElementById(&#34;firstLockFourth&#34;).value;var SL = document.getElementById(&#34;secondLockFirst&#34;).value + document.getElementById(&#34;secondLockSecond&#34;).value + document.getElementById(&#34;secondLockThird&#34;).value + document.getElementById(&#34;secondLockFourth&#34;).value;var TL = document.getElementById(&#34;thirdLockFirst&#34;).value + document.getElementById(&#34;thirdLockSecond&#34;).value + document.getElementById(&#34;thirdLockThird&#34;).value + document.getElementById(&#34;thirdLockFourth&#34;).value;var FRL = document.getElementById(&#34;fourthLockFirst&#34;).value + document.getElementById(&#34;fourthLockSecond&#34;).value + document.getElementById(&#34;fourthLockThird&#34;).value + document.getElementById(&#34;fourthLockFourth&#34;).value;if (FL == 3232 &amp;&amp; SL == 7501 &amp;&amp; TL == 2983 &amp;&amp; FRL == 3264){freeRobby();document.</description>
     </item>
     
   </channel>
