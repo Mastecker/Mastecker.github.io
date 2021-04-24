@@ -85,325 +85,427 @@ Wenn du alle Codes herausgefunden hast, kannst du sie am Ende der Seite eingeben
       
   
       <section id="slide3">
-        <div><html>  
-<body text-align: justify;>  
-<center>
-<!-- --------------------Trennstrich--------------------- -->
-<!-- --------------------BinärAddition------------------------- -->
-<div class="container">
-	<h2>Binär - Addition</h2>
-    <p>
-      Um Binärwerte zum angezeigten Wert hinzuzufügen, klicke auf die Zahl, die du hinzuaddieren möchtest.
-    </p>
-    <div class="calculator">
-	  <div class="calculator__display">0000</div><br>
-	  <div class="calculator__keys">
-		<button data-action="clear">Auf Null setzen</button>
-		<br><br>
-        <button>0000</button>
-        <button>0001</button>
-        <button>0010</button>
-		<button>0011</button>
-		<br>
-        <button>0100</button>
-        <button>0101</button>
-        <button>0110</button>
-		<button>0111</button>
-		<br>
-        <button>1000</button>
-		<button>1001</button>
-		<button>1010</button>
-		<button>1011</button>
-		<br>
-		<button>1100</button>
-		<button>1101</button>
-		<button>1110</button>
-		<button>1111</button>
-      </div>
-	</div>
-  </div>
-<script>
+        <div><html>
+<body text-align: justify;>
+	<center>
+<pre><code>    &lt;!-- --------------------Trennstrich--------------------- --&gt;
 
-function addDecimal(x,y){
-	z = (parseInt(x, 2) + parseInt(y, 2)).toString(2)
-	console.log("Rechnung Binär: " +z)
-	
-	if(z == 1){
-			return '0001'
-		}
-		else if(z > 1111){
-			var a = parseInt(x, 2)
-			console.log("a: " +a)
-			var b = parseInt(y, 2)
-			console.log("b: " +b)
-			dec = a + b
-			console.log("DezimalParsedPlus: " +dec)
-			dec = dec%16
-			console.log("DezimalRechnungMod: " +dec)
-			dec = dec.toString(2)
-			console.log("DezimalRechnung: " +dec)
+    &lt;!-- --------------------BinärAddition------------------------- --&gt;
 
-			if(dec == 0){
-				return '0000'
-			}
-			if(dec == 1){
-				return '0001'
-			}
-			else if(dec > 111){
-				return dec
-			}
-			else if(dec > 11){
-				
-				return '0' + dec
-			}
-			else if(z > 1){
-				return '00' + dec
-			}
-    	}
-		else if(z > 111){
-			return z
-		}
-		else if(z > 11){
-			return '0' + z
-		}
-		else if(z > 1){
-			return '00' + z
-		}
-		else if(z == 0){
-			return '0000'
-		}
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;h2&gt;Binär - Addition&lt;/h2&gt;
+        &lt;p&gt;
+            Um Binärwerte zum angezeigten Wert hinzuzufügen, klicke auf die Zahl, die du hinzuaddieren möchtest.
+        &lt;/p&gt;
+        &lt;div class=&quot;calculator&quot;&gt;
+            &lt;div class=&quot;calculator__display&quot;&gt;0000&lt;/div&gt;&lt;br&gt;
+            &lt;div class=&quot;calculator__keys&quot;&gt;
+                &lt;button data-action=&quot;clear&quot;&gt;Auf Null setzen&lt;/button&gt;
+                &lt;br&gt;&lt;br&gt;
+                &lt;button&gt;0000&lt;/button&gt;
+                &lt;button&gt;0001&lt;/button&gt;
+                &lt;button&gt;0010&lt;/button&gt;
+                &lt;button&gt;0011&lt;/button&gt;
+                &lt;br&gt;
+                &lt;button&gt;0100&lt;/button&gt;
+                &lt;button&gt;0101&lt;/button&gt;
+                &lt;button&gt;0110&lt;/button&gt;
+                &lt;button&gt;0111&lt;/button&gt;
+                &lt;br&gt;
+                &lt;button&gt;1000&lt;/button&gt;
+                &lt;button&gt;1001&lt;/button&gt;
+                &lt;button&gt;1010&lt;/button&gt;
+                &lt;button&gt;1011&lt;/button&gt;
+                &lt;br&gt;
+                &lt;button&gt;1100&lt;/button&gt;
+                &lt;button&gt;1101&lt;/button&gt;
+                &lt;button&gt;1110&lt;/button&gt;
+                &lt;button&gt;1111&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;script&gt;
+
+        function addDecimal(x, y) {
+            z = (parseInt(x, 2) + parseInt(y, 2)).toString(2)
+            console.log(&quot;Rechnung Binär: &quot; + z)
+
+            if (z == 1) {
+                return '0001'
+            }
+            else if (z &gt; 1111) {
+                var a = parseInt(x, 2)
+                console.log(&quot;a: &quot; + a)
+                var b = parseInt(y, 2)
+                console.log(&quot;b: &quot; + b)
+                dec = a + b
+                console.log(&quot;DezimalParsedPlus: &quot; + dec)
+                dec = dec % 16
+                console.log(&quot;DezimalRechnungMod: &quot; + dec)
+                dec = dec.toString(2)
+                console.log(&quot;DezimalRechnung: &quot; + dec)
+
+                if (dec == 0) {
+                    return '0000'
+                }
+                if (dec == 1) {
+                    return '0001'
+                }
+                else if (dec &gt; 111) {
+                    return dec
+                }
+                else if (dec &gt; 11) {
+
+                    return '0' + dec
+                }
+                else if (z &gt; 1) {
+                    return '00' + dec
+                }
+            }
+            else if (z &gt; 111) {
+                return z
+            }
+            else if (z &gt; 11) {
+                return '0' + z
+            }
+            else if (z &gt; 1) {
+                return '00' + z
+            }
+            else if (z == 0) {
+                return '0000'
+            }
+
+
+        }
+
+        const calculator = document.querySelector('.calculator')
+        const display = calculator.querySelector('.calculator__display')
+        const keys = calculator.querySelector('.calculator__keys')
+
+        keys.addEventListener('click', e =&gt; {
+            if (e.target.matches('button')) {
+                const key = e.target
+                const action = key.dataset.action
+                const keyContent = key.textContent
+                var displayedNum = display.textContent
+                const previousKeyType = calculator.dataset.previousKeyType
+
+                Array.from(key.parentNode.children)
+                    .forEach(k =&gt; k.classList.remove('is-depressed'))
+
+                if (!action) {
+                    if (displayedNum === '0' || previousKeyType === 'operator') {
+                        display.textContent = keyContent
+                    } else {
+                        display.textContent = displayedNum + keyContent
+                    }
+                }
+
+                if (action === 'clear') {
+                    console.log('clear key!')
+                    display.textContent = '0000'
+                }
+
+                if (!action) {
+                    const keyContent = key.textContent
+                    var neuerWert = addDecimal(displayedNum, keyContent)
+                    display.textContent = neuerWert
+
+                }
+            }
+        })
+
+    &lt;/script&gt;
+
+
+
+    &lt;br&gt;
+    &lt;br&gt;
+
+    &lt;!-- --------------------Trennstrich--------------------- --&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+
+    &lt;!-- --------------------Inseln------------------------- --&gt;
+    &lt;!-- DropboxCode von https://www.w3schools.com/howto/howto_js_dropdown.asp --&gt;
+
+    &lt;script&gt;
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function islandDrop() {
+            document.getElementById(&quot;myDropdown&quot;).classList.toggle(&quot;show&quot;);
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName(&quot;dropdown-content&quot;);
+                var i;
+                for (i = 0; i &lt; dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+        function island(xmarks) {
+            var islandText;
+            if (xmarks) {
+                text = &quot;Richtig!! Code 2 = 7501&quot;;
+            } else {
+                text = &quot;Das war leider nicht richtig. Probier es nochmal!&quot;;
+            }
+            document.getElementById(&quot;islandloesung&quot;).innerHTML = text;
+        }
+
+
+    &lt;/script&gt;
+
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+
+    &lt;head&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+        &lt;style&gt;
+            .dropbtn:hover,
+            .dropbtn:focus {}
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 160px;
+                overflow: auto;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+            .dropdown a:hover {
+                background-color: #ddd;
+            }
+
+            .show {
+                display: block;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+
+        &lt;h2&gt;Die Inseln&lt;/h2&gt;
+        &lt;p&gt;Klick auf den Button und wähle eine der Inseln aus.&lt;/p&gt;
+
+        &lt;div class=&quot;dropdown&quot;&gt;
+            &lt;button onclick=&quot;islandDrop()&quot; class=&quot;dropbtn&quot;&gt;Klick&lt;/button&gt;
+            &lt;div id=&quot;myDropdown&quot; class=&quot;dropdown-content&quot;&gt;
+                &lt;a onclick=&quot;island(false)&quot;&gt;Borkum&lt;/a&gt;
+                &lt;a onclick=&quot;island(false)&quot;&gt;Föhr&lt;/a&gt;
+                &lt;a onclick=&quot;island(false)&quot;&gt;Pellworm&lt;/a&gt;
+                &lt;a onclick=&quot;island(false)&quot;&gt;Norderney&lt;/a&gt;
+                &lt;a onclick=&quot;island(false)&quot;&gt;Amrum&lt;/a&gt;
+                &lt;a onclick=&quot;island(false)&quot;&gt;Langeoog&lt;/a&gt;
+                &lt;a onclick=&quot;island(false)&quot;&gt;Spiekeroog&lt;/a&gt;
+                &lt;a onclick=&quot;island(false)&quot;&gt;Juist&lt;/a&gt;
+                &lt;a onclick=&quot;island(true)&quot;&gt;Sylt&lt;/a&gt;
+                &lt;a onclick=&quot;island(false)&quot;&gt;Wangerooge&lt;/a&gt;
+                &lt;a onclick=&quot;island(false)&quot;&gt;Baltrum&lt;/a&gt;
+                &lt;a onclick=&quot;island(false)&quot;&gt;Nordstrand&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+
+        &lt;p id=&quot;islandloesung&quot;&gt;&lt;/p&gt;
 		
 
-    }
+    &lt;/body&gt;
 
-// function binaryZeros(ergebnis){
-// 	if(ergebnis == 0b1){
-// 		neuerWert = 1
-// 		display.textContent =  '0001'
-// 	}
-// 	else if(ergebnis > 0b111){
-// 		display.textContent = ergebnis
-// 	}
-// 	else if(ergebnis > 0b11){
-// 		display.textContent = '0' + ergebnis
-// 	}
-// 	else if(ergebnis > 0b1){
-// 		display.textContent = '00' + ergebnis
-// 	}
-// }
-
-const calculator = document.querySelector('.calculator')
-const display = calculator.querySelector('.calculator__display')
-const keys = calculator.querySelector('.calculator__keys')
-
-keys.addEventListener('click', e => {
-  if (e.target.matches('button')) {
-    const key = e.target
-    const action = key.dataset.action
-    const keyContent = key.textContent
-    var displayedNum = display.textContent
-    const previousKeyType = calculator.dataset.previousKeyType
-
-    Array.from(key.parentNode.children)
-      .forEach(k => k.classList.remove('is-depressed'))
-
-	  if (!action) {
-      if (displayedNum === '0' || previousKeyType === 'operator') {
-        display.textContent = keyContent
-      } else {
-        display.textContent = displayedNum + keyContent
-      }
-    }
-
-    if (action === 'clear') {
-	  console.log('clear key!')
-	  display.textContent = '0000'
-    }
-
-    if (!action) {
-      	const keyContent = key.textContent
-		var neuerWert = addDecimal(displayedNum, keyContent)
-		display.textContent = neuerWert
-
-    }
-  }
-})
-
-</script>
-<br>
-<br>
-<!-- --------------------Trennstrich--------------------- -->
-<br>
-<br>
-<!-- --------------------Inseln------------------------- -->
-<script>
-function island() {
-  var text;
-  var insel = prompt("Welche Insel ist es?", "Borkum");
-  switch(insel) {
-    case "Sylt":
-      text = "Richtig!! Code 2 = 7501";
-      break;
-    default:
-      text = "Das ist leider nicht richtig.";
-  }
-  document.getElementById("inselLoesung").innerHTML = text;
-}
-</script>
-<h2>Die Inseln</h2>
-<p>Klick auf den Button und tippe den Namen einer Insel ein. Achte auf Groß- und Kleinschreibung!</p>
-<p><button onclick="island()">Klick</button></p>
-<p id="inselLoesung"></p>
-<p>Mögliche Antwort ist eine der deutschen Nordseeinseln: <br>
-	Borkum, 
-    Föhr, 
-    Pellworm, 
-    Norderney, 
-    Amrum, 
-    Langeoog, 
-    Spiekeroog, 
-    Juist, 
-    Sylt, 
-    Wangerooge, 
-	Baltrum, 
-	Nordstrand
-</p>
-<!-- --------------------Trennstrich--------------------- -->
-<br>
-<br>
-<!-- --------------------Farben------------------------- -->
-<script>
-	 var r = 0;
-	 var g = 0;
-	 var b = 0;
-
-    function changeRed(value) {
-        document.getElementById('valRed').innerHTML = value;
-        changeAll();
-    }
-    function changeGreen(value) {
-        document.getElementById('valGreen').innerHTML = value;
-        changeAll();
-    }
-    function changeBlue(value) {
-        document.getElementById('valBlue').innerHTML = value;
-        changeAll();
-    }
-    function changeAll() {
-        r = document.getElementById('valRed').innerHTML;
-        g = document.getElementById('valGreen').innerHTML;
-        b = document.getElementById('valBlue').innerHTML;
-        document.getElementById('change').style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
-        document.getElementById('changetxt').innerHTML = "rgb(" + r + ", " + g + ", " + b + ")";
-    }
-
-	function farbenloesung() {
-		var text;
-		if(r == 66 && g == 35 && b == 125){
-      		text = "Richtig!! Code 3 = 2983";
-		}else{
-	    	text = "Die gemischte Farbe ist noch nicht richtig.";
-  }
-  document.getElementById("farbenloesung").innerHTML = text;
-}
-
-</script>
-<h2>Farbmischung</h2>
-<p>Verschiebe die Regler um die Farben mischen zu können. Wenn du mit der Farbe zufrieden bist, klicke auf "Klick" <br>
-	Solltest du Probleme mit dem Schieberegeler haben, klicke ihn an und arbeite mit den Pfeiltasten.	
-</p>
-<button onclick="farbenloesung()">Klick</button>
-<p id="farbenloesung"></p>
-<table class="w3-table w3-border" style="width:100%">
-		<tr>
-			<td id="valRed"></td>
-			<td id="valGreen"></td>
-			<td id="valBlue"></td>
-		</tr>
-		<tr>
-			<td>
-  				<input oninput="changeRed(this.value)" onchange="changeRed(this.value)" type="range" id="slideRed" name="slideRed" min="0" max="255">
-  			</td>
-   			<td>
-  				<input oninput="changeGreen(this.value)" onchange="changeGreen(this.value)" type="range" id="slideGreen" name="slideGreen" min="0" max="255">
-  			</td>
-  			<td>
-  				<input oninput="changeBlue(this.value)" onchange="changeBlue(this.value)" type="range" id="slideBlue" name="slideBlue" min="0" max="255">
-  			</td>
-   		</tr>
-	</table>    
-	<div id="change" style="height:50px"></div>
- 	<div id="fixed" style="height:50px"></div>
-  	<div class="w3-center" style="font-family:Consolas, 'Courier New', Courier, monospace">
- 	<span id="changetxt"></span><br>
- 	<span id="changetxthex"></span>
-</div>
-<!-- --------------------Trennstrich--------------------- -->
-<br>
-<br>
-<!-- --------------------Das R-Bild------------------------- -->
-<script>
-
-var firstDigit = 100;
-var secondDigit = 010;
-var thirdDigit = 001;
-
-function getValue() {
-	var valueRed = document.querySelector('input[name="red"]:checked').value;
-	var valueGreen = document.querySelector('input[name="green"]:checked').value;
-	var valueBlue = document.querySelector('input[name="blue"]:checked').value;
-	var pictureSelect= valueRed+valueGreen+valueBlue;
-	console.log("Selected picture: "+ pictureSelect);
-	changePic(pictureSelect);
-}
-
-function changePic(pictureSelect){
-	document.getElementById("picture").src = '/' + pictureSelect + '.png';
-}
+    &lt;/html&gt;
 
 
-</script>
-<h2>Computermonitor</h2>
-<p>Hier kannst du die verschieden farbigen LEDs nach Belieben aus/- und einschalten.</p>
-<table style="width:50%">
-<tr>
-<th>
- <div class="form">
-	<input type="radio" name="red" id="redon" value="1" checked="checked">Die rote LED funktioniert <br>
-	<input type="radio" name="red" id="redoff" value="0">Die rote LED funktioniert nicht<br><br>
-	 <button type="button" onclick="getValue()">Klick</button>
-</form>
-</div>
-</th>
-<th>
- <div class="form">
-	<input type="radio" name="green" id="gruenon" value="1" checked="checked">Die grüne LED funktioniert <br>
-	<input type="radio" name="green" id="gruenoff" value="0">Die grüne LED funktioniert nicht<br><br>
-	 <button type="button" onclick="getValue()">Klick</button>
-</form>
-</div>
-</th>
-<th>
- <div class="form">
-	<input type="radio" name="blue" id="blueon" value="1" checked="checked">Die blaue LED funktioniert <br>
-	<input type="radio" name="blue" id="blueoff" value="0">Die blaue LED funktioniert nicht<br><br>
-	 <button type="button" onclick="getValue()">Klick</button>
-	 <br><br>
-</form>
-</div>
-</th>
-</tr>
-</table>
-  <div>
-    <img id="picture" src="/111.png">
-  </div>
-<!-- --------------------Trennstrich--------------------- -->
-<!-- ---------------------------------------------------------- -->
-</div> 
-</center>
-</body>  
-</html>  
- </div>
+
+    &lt;!-- --------------------Trennstrich--------------------- --&gt;
+
+    &lt;br&gt;
+    &lt;br&gt;
+
+    &lt;!-- --------------------Farben------------------------- --&gt;
+
+
+    &lt;script&gt;
+        var r = 0;
+        var g = 0;
+        var b = 0;
+
+        function changeRed(value) {
+            document.getElementById('valRed').innerHTML = value;
+            changeAll();
+        }
+        function changeGreen(value) {
+            document.getElementById('valGreen').innerHTML = value;
+            changeAll();
+        }
+        function changeBlue(value) {
+            document.getElementById('valBlue').innerHTML = value;
+            changeAll();
+        }
+        function changeAll() {
+            r = document.getElementById('valRed').innerHTML;
+            g = document.getElementById('valGreen').innerHTML;
+            b = document.getElementById('valBlue').innerHTML;
+            document.getElementById('change').style.backgroundColor = &quot;rgb(&quot; + r + &quot;,&quot; + g + &quot;,&quot; + b + &quot;)&quot;;
+            document.getElementById('changetxt').innerHTML = &quot;rgb(&quot; + r + &quot;, &quot; + g + &quot;, &quot; + b + &quot;)&quot;;
+        }
+
+        function farbenloesung() {
+            var text;
+            if (r == 66 &amp;&amp; g == 35 &amp;&amp; b == 125) {
+                text = &quot;Richtig!! Code 3 = 2983&quot;;
+            } else {
+                text = &quot;Die gemischte Farbe ist noch nicht richtig.&quot;;
+            }
+            document.getElementById(&quot;farbenloesung&quot;).innerHTML = text;
+        }
+
+    &lt;/script&gt;
+
+
+    &lt;h2&gt;Farbmischung&lt;/h2&gt;
+
+
+    &lt;p&gt;Verschiebe die Regler um die Farben mischen zu können. Wenn du mit der Farbe zufrieden bist, klicke auf
+        &quot;Klick&quot; &lt;br&gt;
+        Solltest du Probleme mit dem Schieberegeler haben, klicke ihn an und arbeite mit den Pfeiltasten.
+    &lt;/p&gt;
+    &lt;button onclick=&quot;farbenloesung()&quot;&gt;Klick&lt;/button&gt;
+    &lt;p id=&quot;farbenloesung&quot;&gt;&lt;/p&gt;
+
+    &lt;table class=&quot;w3-table w3-border&quot; style=&quot;width:100%&quot;&gt;
+        &lt;tr&gt;
+            &lt;td id=&quot;valRed&quot;&gt;&lt;/td&gt;
+            &lt;td id=&quot;valGreen&quot;&gt;&lt;/td&gt;
+            &lt;td id=&quot;valBlue&quot;&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;
+                &lt;input oninput=&quot;changeRed(this.value)&quot; onchange=&quot;changeRed(this.value)&quot; type=&quot;range&quot; id=&quot;slideRed&quot;
+                    name=&quot;slideRed&quot; min=&quot;0&quot; max=&quot;255&quot;&gt;
+            &lt;/td&gt;
+            &lt;td&gt;
+                &lt;input oninput=&quot;changeGreen(this.value)&quot; onchange=&quot;changeGreen(this.value)&quot; type=&quot;range&quot;
+                    id=&quot;slideGreen&quot; name=&quot;slideGreen&quot; min=&quot;0&quot; max=&quot;255&quot;&gt;
+            &lt;/td&gt;
+            &lt;td&gt;
+                &lt;input oninput=&quot;changeBlue(this.value)&quot; onchange=&quot;changeBlue(this.value)&quot; type=&quot;range&quot;
+                    id=&quot;slideBlue&quot; name=&quot;slideBlue&quot; min=&quot;0&quot; max=&quot;255&quot;&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;div id=&quot;change&quot; style=&quot;height:50px&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;fixed&quot; style=&quot;height:50px&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;w3-center&quot; style=&quot;font-family:Consolas, 'Courier New', Courier, monospace&quot;&gt;
+        &lt;span id=&quot;changetxt&quot;&gt;&lt;/span&gt;&lt;br&gt;
+        &lt;span id=&quot;changetxthex&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+
+    &lt;!-- --------------------Trennstrich--------------------- --&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+
+    &lt;!-- --------------------Das R-Bild------------------------- --&gt;
+
+    &lt;script&gt;
+
+        var firstDigit = 100;
+        var secondDigit = 010;
+        var thirdDigit = 001;
+
+        function getValue() {
+            var valueRed = document.querySelector('input[name=&quot;red&quot;]:checked').value;
+            var valueGreen = document.querySelector('input[name=&quot;green&quot;]:checked').value;
+            var valueBlue = document.querySelector('input[name=&quot;blue&quot;]:checked').value;
+            var pictureSelect = valueRed + valueGreen + valueBlue;
+            console.log(&quot;Selected picture: &quot; + pictureSelect);
+            changePic(pictureSelect);
+        }
+
+        function changePic(pictureSelect) {
+            document.getElementById(&quot;picture&quot;).src = '/' + pictureSelect + '.png';
+        }
+
+
+    &lt;/script&gt;
+
+
+    &lt;h2&gt;Computermonitor&lt;/h2&gt;
+    &lt;p&gt;Hier kannst du die verschieden farbigen LEDs nach Belieben aus/- und einschalten.&lt;/p&gt;
+
+    &lt;table style=&quot;width:50%&quot;&gt;
+        &lt;tr&gt;
+            &lt;th&gt;
+                &lt;div class=&quot;form&quot;&gt;
+                    &lt;input type=&quot;radio&quot; name=&quot;red&quot; id=&quot;redon&quot; value=&quot;1&quot; checked=&quot;checked&quot;&gt;Die rote LED funktioniert
+                    &lt;br&gt;
+                    &lt;input type=&quot;radio&quot; name=&quot;red&quot; id=&quot;redoff&quot; value=&quot;0&quot;&gt;Die rote LED funktioniert nicht&lt;br&gt;&lt;br&gt;
+                    &lt;button type=&quot;button&quot; onclick=&quot;getValue()&quot;&gt;Klick&lt;/button&gt;
+                    &lt;/form&gt;
+                &lt;/div&gt;
+            &lt;/th&gt;
+
+            &lt;th&gt;
+                &lt;div class=&quot;form&quot;&gt;
+                    &lt;input type=&quot;radio&quot; name=&quot;green&quot; id=&quot;gruenon&quot; value=&quot;1&quot; checked=&quot;checked&quot;&gt;Die grüne LED
+                    funktioniert &lt;br&gt;
+                    &lt;input type=&quot;radio&quot; name=&quot;green&quot; id=&quot;gruenoff&quot; value=&quot;0&quot;&gt;Die grüne LED funktioniert
+                    nicht&lt;br&gt;&lt;br&gt;
+                    &lt;button type=&quot;button&quot; onclick=&quot;getValue()&quot;&gt;Klick&lt;/button&gt;
+                    &lt;/form&gt;
+                &lt;/div&gt;
+            &lt;/th&gt;
+
+            &lt;th&gt;
+                &lt;div class=&quot;form&quot;&gt;
+                    &lt;input type=&quot;radio&quot; name=&quot;blue&quot; id=&quot;blueon&quot; value=&quot;1&quot; checked=&quot;checked&quot;&gt;Die blaue LED
+                    funktioniert &lt;br&gt;
+                    &lt;input type=&quot;radio&quot; name=&quot;blue&quot; id=&quot;blueoff&quot; value=&quot;0&quot;&gt;Die blaue LED funktioniert nicht&lt;br&gt;&lt;br&gt;
+                    &lt;button type=&quot;button&quot; onclick=&quot;getValue()&quot;&gt;Klick&lt;/button&gt;
+                    &lt;br&gt;&lt;br&gt;
+                    &lt;/form&gt;
+                &lt;/div&gt;
+            &lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+
+    &lt;div&gt;
+        &lt;img id=&quot;picture&quot; src=&quot;/111.png&quot;&gt;
+    &lt;/div&gt;
+
+
+    &lt;!-- --------------------Trennstrich--------------------- --&gt;
+
+
+
+    &lt;!-- ---------------------------------------------------------- --&gt;
+
+    &lt;/div&gt;
+&lt;/center&gt;
+</code></pre>
+</body>
+</html> </div>
       </section>
   
 
@@ -414,376 +516,6 @@ function changePic(pictureSelect){
       
   
       <section id="slide4">
-        <div>
-<html>  
-<body text-align: justify;>  
-<center>
-
-<!-- --------------------Trennstrich--------------------- -->
-
-<!-- --------------------BinärAddition------------------------- -->
-
-<div class="container">
-	<h2>Binär - Addition</h2>
-    <p>
-      Um Binärwerte zum angezeigten Wert hinzuzufügen, klicke auf die Zahl, die du hinzuaddieren möchtest.
-    </p>
-    <div class="calculator">
-	  <div class="calculator__display">0000</div><br>
-	  <div class="calculator__keys">
-		<button data-action="clear">Auf Null setzen</button>
-		<br><br>
-        <button>0000</button>
-        <button>0001</button>
-        <button>0010</button>
-		<button>0011</button>
-		<br>
-        <button>0100</button>
-        <button>0101</button>
-        <button>0110</button>
-		<button>0111</button>
-		<br>
-        <button>1000</button>
-		<button>1001</button>
-		<button>1010</button>
-		<button>1011</button>
-		<br>
-		<button>1100</button>
-		<button>1101</button>
-		<button>1110</button>
-		<button>1111</button>
-      </div>
-	</div>
-  </div>
-
-<script>
-
-function addDecimal(x,y){
-	z = (parseInt(x, 2) + parseInt(y, 2)).toString(2)
-	console.log("Rechnung Binär: " +z)
-	
-	if(z == 1){
-			return '0001'
-		}
-		else if(z > 1111){
-			var a = parseInt(x, 2)
-			console.log("a: " +a)
-			var b = parseInt(y, 2)
-			console.log("b: " +b)
-			dec = a + b
-			console.log("DezimalParsedPlus: " +dec)
-			dec = dec%16
-			console.log("DezimalRechnungMod: " +dec)
-			dec = dec.toString(2)
-			console.log("DezimalRechnung: " +dec)
-
-			if(dec == 0){
-				return '0000'
-			}
-			if(dec == 1){
-				return '0001'
-			}
-			else if(dec > 111){
-				return dec
-			}
-			else if(dec > 11){
-				
-				return '0' + dec
-			}
-			else if(z > 1){
-				return '00' + dec
-			}
-    	}
-		else if(z > 111){
-			return z
-		}
-		else if(z > 11){
-			return '0' + z
-		}
-		else if(z > 1){
-			return '00' + z
-		}
-		else if(z == 0){
-			return '0000'
-		}
-		
-
-    }
-
-// function binaryZeros(ergebnis){
-// 	if(ergebnis == 0b1){
-// 		neuerWert = 1
-// 		display.textContent =  '0001'
-// 	}
-// 	else if(ergebnis > 0b111){
-// 		display.textContent = ergebnis
-// 	}
-// 	else if(ergebnis > 0b11){
-// 		display.textContent = '0' + ergebnis
-// 	}
-// 	else if(ergebnis > 0b1){
-// 		display.textContent = '00' + ergebnis
-// 	}
-// }
-
-const calculator = document.querySelector('.calculator')
-const display = calculator.querySelector('.calculator__display')
-const keys = calculator.querySelector('.calculator__keys')
-
-keys.addEventListener('click', e => {
-  if (e.target.matches('button')) {
-    const key = e.target
-    const action = key.dataset.action
-    const keyContent = key.textContent
-    var displayedNum = display.textContent
-    const previousKeyType = calculator.dataset.previousKeyType
-
-    Array.from(key.parentNode.children)
-      .forEach(k => k.classList.remove('is-depressed'))
-
-	  if (!action) {
-      if (displayedNum === '0' || previousKeyType === 'operator') {
-        display.textContent = keyContent
-      } else {
-        display.textContent = displayedNum + keyContent
-      }
-    }
-
-    if (action === 'clear') {
-	  console.log('clear key!')
-	  display.textContent = '0000'
-    }
-
-    if (!action) {
-      	const keyContent = key.textContent
-		var neuerWert = addDecimal(displayedNum, keyContent)
-		display.textContent = neuerWert
-
-    }
-  }
-})
-
-</script>
-
-
-
-<br>
-<br>
-
-<!-- --------------------Trennstrich--------------------- -->
-<br>
-<br>
-
-<!-- --------------------Inseln------------------------- -->
-
-<script>
-function island() {
-  var text;
-  var insel = prompt("Welche Insel ist es?", "Borkum");
-  switch(insel) {
-    case "Sylt":
-      text = "Richtig!! Code 2 = 7501";
-      break;
-    default:
-      text = "Das ist leider nicht richtig.";
-  }
-  document.getElementById("inselLoesung").innerHTML = text;
-}
-</script>
-
-
-<h2>Die Inseln</h2>
-<p>Klick auf den Button und tippe den Namen einer Insel ein. Achte auf Groß- und Kleinschreibung!</p>
-
-<button onclick="island()">Klick</button>
-<p id="inselLoesung"></p>
-
-<p>Mögliche Antwort ist eine der deutschen Nordseeinseln: <br>
-	Borkum, 
-    Föhr, 
-    Pellworm, 
-    Norderney, 
-    Amrum, 
-    Langeoog, 
-    Spiekeroog, 
-    Juist, 
-    Sylt, 
-    Wangerooge, 
-	Baltrum, 
-	Nordstrand
-</p>
-
-
-<!-- --------------------Trennstrich--------------------- -->
-
-<br>
-<br>
-
-<!-- --------------------Farben------------------------- -->
-
-
-<script>
-	 var r = 0;
-	 var g = 0;
-	 var b = 0;
-
-    function changeRed(value) {
-        document.getElementById('valRed').innerHTML = value;
-        changeAll();
-    }
-    function changeGreen(value) {
-        document.getElementById('valGreen').innerHTML = value;
-        changeAll();
-    }
-    function changeBlue(value) {
-        document.getElementById('valBlue').innerHTML = value;
-        changeAll();
-    }
-    function changeAll() {
-        r = document.getElementById('valRed').innerHTML;
-        g = document.getElementById('valGreen').innerHTML;
-        b = document.getElementById('valBlue').innerHTML;
-        document.getElementById('change').style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
-        document.getElementById('changetxt').innerHTML = "rgb(" + r + ", " + g + ", " + b + ")";
-    }
-
-	function farbenloesung() {
-		var text;
-		if(r == 66 && g == 35 && b == 125){
-      		text = "Richtig!! Code 3 = 2983";
-		}else{
-	    	text = "Die gemischte Farbe ist noch nicht richtig.";
-  }
-  document.getElementById("farbenloesung").innerHTML = text;
-}
-
-</script>
-
-
-<h2>Farbmischung</h2>
-
-
-<p>Verschiebe die Regler um die Farben mischen zu können. Wenn du mit der Farbe zufrieden bist, klicke auf "Klick" <br>
-	Solltest du Probleme mit dem Schieberegeler haben, klicke ihn an und arbeite mit den Pfeiltasten.	
-</p>
-<button onclick="farbenloesung()">Klick</button>
-<p id="farbenloesung"></p>
-
-<table class="w3-table w3-border" style="width:100%">
-		<tr>
-			<td id="valRed"></td>
-			<td id="valGreen"></td>
-			<td id="valBlue"></td>
-		</tr>
-		<tr>
-			<td>
-  				<input oninput="changeRed(this.value)" onchange="changeRed(this.value)" type="range" id="slideRed" name="slideRed" min="0" max="255">
-  			</td>
-   			<td>
-  				<input oninput="changeGreen(this.value)" onchange="changeGreen(this.value)" type="range" id="slideGreen" name="slideGreen" min="0" max="255">
-  			</td>
-  			<td>
-  				<input oninput="changeBlue(this.value)" onchange="changeBlue(this.value)" type="range" id="slideBlue" name="slideBlue" min="0" max="255">
-  			</td>
-   		</tr>
-	</table>    
-	<div id="change" style="height:50px"></div>
- 	<div id="fixed" style="height:50px"></div>
-  	<div class="w3-center" style="font-family:Consolas, 'Courier New', Courier, monospace">
- 	<span id="changetxt"></span><br>
- 	<span id="changetxthex"></span>
-</div>
-
-<!-- --------------------Trennstrich--------------------- -->
-<br>
-<br>
-
-<!-- --------------------Das R-Bild------------------------- -->
-
-<script>
-
-var firstDigit = 100;
-var secondDigit = 010;
-var thirdDigit = 001;
-
-function getValue() {
-	var valueRed = document.querySelector('input[name="red"]:checked').value;
-	var valueGreen = document.querySelector('input[name="green"]:checked').value;
-	var valueBlue = document.querySelector('input[name="blue"]:checked').value;
-	var pictureSelect= valueRed+valueGreen+valueBlue;
-	console.log("Selected picture: "+ pictureSelect);
-	changePic(pictureSelect);
-}
-
-function changePic(pictureSelect){
-	document.getElementById("picture").src = '/' + pictureSelect + '.png';
-}
-
-
-</script>
-
-
-<h2>Computermonitor</h2>
-<p>Hier kannst du die verschieden farbigen LEDs nach Belieben aus/- und einschalten.</p>
-
-<table style="width:50%">
-<tr>
-<th>
- <div class="form">
-	<input type="radio" name="red" id="redon" value="1" checked="checked">Die rote LED funktioniert <br>
-	<input type="radio" name="red" id="redoff" value="0">Die rote LED funktioniert nicht<br><br>
-	 <button type="button" onclick="getValue()">Klick</button>
-</form>
-</div>
-</th>
-
-<th>
- <div class="form">
-	<input type="radio" name="green" id="gruenon" value="1" checked="checked">Die grüne LED funktioniert <br>
-	<input type="radio" name="green" id="gruenoff" value="0">Die grüne LED funktioniert nicht<br><br>
-	 <button type="button" onclick="getValue()">Klick</button>
-</form>
-</div>
-</th>
-
-<th>
- <div class="form">
-	<input type="radio" name="blue" id="blueon" value="1" checked="checked">Die blaue LED funktioniert <br>
-	<input type="radio" name="blue" id="blueoff" value="0">Die blaue LED funktioniert nicht<br><br>
-	 <button type="button" onclick="getValue()">Klick</button>
-	 <br><br>
-</form>
-</div>
-</th>
-</tr>
-</table>
-
-  <div>
-    <img id="picture" src="/111.png">
-  </div>
-
-
-<!-- --------------------Trennstrich--------------------- -->
-
-
-
-<!-- ---------------------------------------------------------- -->
-
-</div> 
-</center>
-</body>  
-</html>  
- </div>
-      </section>
-  
-
-      
-      
-      
-
-      
-  
-      <section id="slide5">
         <div><html>  
 <body>  
 <center>

@@ -26,18 +26,7 @@
       <pubDate>Mon, 21 Dec 2020 09:29:07 +0100</pubDate>
       
       <guid>http://Mastecker.github.io/programme/</guid>
-      <description>Binär - Addition  Um Binärwerte zum angezeigten Wert hinzuzufügen, klicke auf die Zahl, die du hinzuaddieren möchtest. 0000
-Auf Null setzen 0000 0001 0010 0011 0100 0101 0110 0111 1000 1001 1010 1011 1100 1101 1110 1111     function addDecimal(x,y){ z = (parseInt(x, 2) + parseInt(y, 2)).toString(2) console.log(&#34;Rechnung Binär: &#34; +z) if(z == 1){ return &#39;0001&#39; } else if(z  1111){ var a = parseInt(x, 2) console.</description>
-    </item>
-    
-    <item>
-      <title>Programme</title>
-      <link>http://Mastecker.github.io/testsite/</link>
-      <pubDate>Mon, 21 Dec 2020 09:29:07 +0100</pubDate>
-      
-      <guid>http://Mastecker.github.io/testsite/</guid>
-      <description>Binär - AdditionUm Binärwerte zum angezeigten Wert hinzuzufügen, klicke auf die Zahl, die du hinzuaddieren möchtest.0000
-Auf Null setzen0000000100100011010001010110011110001001101010111100110111101111function addDecimal(x,y){z = (parseInt(x, 2) + parseInt(y, 2)).toString(2)console.log(&#34;Rechnung Binär: &#34; +z)if(z == 1){return &#39;0001&#39;}else if(z  1111){var a = parseInt(x, 2)console.</description>
+      <description>&amp;lt;!-- --------------------Trennstrich--------------------- --&amp;gt; &amp;lt;!-- --------------------BinärAddition------------------------- --&amp;gt; &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt; &amp;lt;h2&amp;gt;Binär - Addition&amp;lt;/h2&amp;gt; &amp;lt;p&amp;gt; Um Binärwerte zum angezeigten Wert hinzuzufügen, klicke auf die Zahl, die du hinzuaddieren möchtest. &amp;lt;/p&amp;gt; &amp;lt;div class=&amp;quot;calculator&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;calculator__display&amp;quot;&amp;gt;0000&amp;lt;/div&amp;gt;&amp;lt;br&amp;gt; &amp;lt;div class=&amp;quot;calculator__keys&amp;quot;&amp;gt; &amp;lt;button data-action=&amp;quot;clear&amp;quot;&amp;gt;Auf Null setzen&amp;lt;/button&amp;gt; &amp;lt;br&amp;gt;&amp;lt;br&amp;gt; &amp;lt;button&amp;gt;0000&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;0001&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;0010&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;0011&amp;lt;/button&amp;gt; &amp;lt;br&amp;gt; &amp;lt;button&amp;gt;0100&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;0101&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;0110&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;0111&amp;lt;/button&amp;gt; &amp;lt;br&amp;gt; &amp;lt;button&amp;gt;1000&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;1001&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;1010&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;1011&amp;lt;/button&amp;gt; &amp;lt;br&amp;gt; &amp;lt;button&amp;gt;1100&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;1101&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;1110&amp;lt;/button&amp;gt; &amp;lt;button&amp;gt;1111&amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; function addDecimal(x, y) { z = (parseInt(x, 2) + parseInt(y, 2)).</description>
     </item>
     
     <item>
